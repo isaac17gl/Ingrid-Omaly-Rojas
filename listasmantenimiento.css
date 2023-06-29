@@ -1,0 +1,60 @@
+#lista4 ol {
+    counter-reset: li; 
+    *list-style: decimal; 
+    font: 15px 'trebuchet MS', 'lucida sans';
+    padding: 0;
+    margin-bottom: 4em;
+    color: black;
+
+}
+
+#lista4 ol {
+    margin: 0 0 0 2em; 
+
+}
+
+#lista4 {
+    list-style-type: upper-roman;
+    list-style-type: decimal !ie;
+    margin: 1px;
+    margin-left: 3em;
+    padding: 1px;
+     
+    counter-reset: li-counter;
+}
+
+#lista4 > li{
+    position: relative;
+    margin-bottom: 20px;
+    padding: 1em;
+    border-left: 2px solid #CCCCCC;
+    background-color: #821515;
+    color: white;
+    font-family: sans-serif;
+}
+
+#lista4 > li:before {
+    position: absolute;
+    top: 0;
+    left: -1.2em;
+    width: 1em;
+ 
+    font-size: 5em;
+    line-height: 1;
+    font-weight: bold;
+    text-align: right;
+    color: #821515;
+     
+    transform: rotate(1deg);
+    -ms-transform: rotate(1deg);
+    -webkit-transform: rotate(1deg);
+    z-index: 100;
+    overflow: hidden;
+     
+    content: counter(li-counter);
+    counter-increment: li-counter;
+}
+
+.listas-mantenimiento{
+    padding: 75px;
+}
